@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Inter";
+        src: url("/fonts/Inter-Regular.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Inter";
+        src: url("/fonts/Inter-Medium.woff2") format("woff2");
+      }
+}
+
+.font-regular {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .font-medium {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+
+  }
+  
+  .font-bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+  }
+
+
+.font-sub-header {
+    font-family: 'Inter', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+  }
+
+  
+  
