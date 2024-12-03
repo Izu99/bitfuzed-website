@@ -100,7 +100,7 @@ const Navbar = () => {
                             placeholder="Search..."
                             className="p-2 pl-10 pr-4 rounded-lg lg:w-5/6 text-gray-800 focus:outline-none border-2 border-gray-300 focus:border-lightBlue shadow-sm"
                         />
-                        <span className="absolute cursor-pointer right-[30%] lg:right-[8%] top-1/2 transform -translate-y-1/2 text-gray-400">
+                        <span className="absolute cursor-pointer right-[35%] lg:right-[15%] top-1/2 transform -translate-y-1/2 text-gray-400">
                             <GoSearch />
                         </span>
                     </div>
