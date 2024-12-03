@@ -17,7 +17,7 @@ const Services = () => {
       title: "Mobile App",
       content: "Create engaging mobile experiences for both Android and iOS.",
       image: "/assets/images/service-icon2.png",
-      style: "bg-mainBlue text-white border border-mainBlue",
+      style: "bg-white text-maingray border border-mainBlue",
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ const Services = () => {
         {cards.map((card) => (
           <div
             key={card.id}
-            className={`p-4 w-4/6 mx-auto rounded-lg shadow-md min-h-[320px] flex flex-col justify-between md:w-full ${card.style}`}
+            className={`p-4 w-4/6 mx-auto rounded-lg shadow-md min-h-[320px] flex flex-col justify-between md:w-full group hover:bg-mainBlue hover:text-white hover:border-mainBlue transition-all duration-300 ${card.style}`}
           >
             {/* Image */}
             <img
@@ -49,12 +49,15 @@ const Services = () => {
               className="w-25 mx-auto object-cover mt-10 rounded-t-lg"
             />
             {/* Title */}
-            <h3 className="text-lg font-bold mt-4 text-center">{card.title}</h3>
+            <h3 className="text-lg font-bold mt-4 text-center group-hover:text-white">
+              {card.title}
+            </h3>
             {/* Content */}
-            <p className="text-center">{card.content}</p>
+            <p className="text-center group-hover:text-white">{card.content}</p>
           </div>
         ))}
       </div>
+
       <Button
         text="View All Services"
         containerClass="bg-mainBlue text-white"
